@@ -1,0 +1,234 @@
+/* Social Media Manager Frontend Styles */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.smm-client-dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.smm-client-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.smm-client-header p {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.smm-client-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.smm-overview-card {
+    background: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.smm-overview-card h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.smm-status-indicator.active {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.smm-metric-large {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.smm-client-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.smm-content-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.smm-content-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+.smm-post-calendar-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.smm-post-calendar-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.smm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.smm-table th,
+.smm-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.smm-table th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.smm-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.smm-btn-sm {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+}
+
+.smm-btn-primary {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.smm-btn-primary:hover {
+    background-color: #219150;
+}
+
+.smm-btn-secondary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.smm-btn-secondary:hover {
+    background-color: #2980b9;
+}
+
+.smm-messages-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.smm-message-item {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.smm-message-item:last-child {
+    border-bottom: none;
+}
+
+.smm-message-item strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.smm-message-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.smm-message-item small {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.smm-analytics-widget {
+    position: relative;
+    height: 300px;
+}
+
+.smm-settings-section form {
+    max-width: 400px;
+}
+
+.smm-form-group {
+    margin-bottom: 15px;
+}
+
+.smm-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.smm-form-group input[type="email"],
+.smm-form-group input[type="password"],
+.smm-form-group input[type="text"],
+.smm-form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.smm-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+}
+
+.smm-notification.smm-notification-success {
+    background-color: #27ae60;
+}
+
+.smm-notification.smm-notification-error {
+    background-color: #e74c3c;
+}
+
+.smm-notification.show {
+    opacity: 1;
+}
